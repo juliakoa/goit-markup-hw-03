@@ -12,6 +12,29 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 0;
+  padding-left: 215px;
+}
+
+.container.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .logo--start {
@@ -21,10 +44,15 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000;
+  margin-right: 93px;
 }
 
 .logo-part {
   color: var(--action-color);
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation_item {
@@ -33,6 +61,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--font-color);
+  margin-right: 46px;
+}
+
+.contact-header {
+  display: flex;
+  align-content: center;
 }
 
 .contact-header_item {
@@ -41,6 +75,19 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-color);
+  margin-right: 50px;
+}
+
+.slogan-section {
+  height: 600px;
+  padding-top: 200px;
+  background-color: var(--footer-background-color);
+}
+
+.container.container-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slogan {
@@ -49,6 +96,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .button-main {
@@ -63,12 +112,22 @@ body {
   border-radius: 4px;
   border: none;
 }
+.introduction {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .introduction_title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .introduction_description {
@@ -76,6 +135,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-right: 30px;
+  text-align: justify;
+  width: 270px;
 }
 
 .section_title {
@@ -83,6 +145,35 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container-activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-image {
+  margin-right: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+}
+.container-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team_card {
+  margin-right: 30px;
+  text-align: center;
+  width: 270px;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team_name {
@@ -90,6 +181,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .team_description {
@@ -99,6 +192,15 @@ body {
   color: var(--description-color);
 }
 
+.buttons-section {
+  border-top: #ececec solid 1px;
+}
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 .button {
   background-color: var(--button-background-color);
   font-weight: 500;
@@ -108,6 +210,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  margin-right: 8px;
 }
 
 .button:hover,
@@ -119,11 +222,26 @@ body {
   border-radius: 4px;
 }
 
+.container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+.project_card {
+  flex-basis: calc((100% - 60px) / 3);
+  border: #eeeeee solid 1px;
+  padding-bottom: 20px;
+}
 .project_name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  margin-top: 20px;
 }
 
 .project_description {
@@ -131,6 +249,16 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  margin-left: 24px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo--end {
@@ -140,14 +268,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #fff;
-}
-
-footer {
-  background-color: var(--footer-background-color);
-}
-
-.slogan-section {
-  background-color: var(--footer-background-color);
+  margin-bottom: 50px;
 }
 
 .contact-footer_address {
@@ -156,6 +277,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #fff;
+  margin-bottom: 9px;
 }
 
 .contact-footer_item {
@@ -164,6 +286,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-item-color);
+  margin-bottom: 9px;
 }
 
 a:visited,
