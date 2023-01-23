@@ -27,10 +27,13 @@ body {
   color: var(--font-color);
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   max-width: 1200px;
-  margin: 0;
-  padding-left: 215px;
+  margin: 0 auto;
 }
 
 .section {
@@ -65,6 +68,7 @@ body {
 
 .navigation {
   display: flex;
+  column-gap: 46px;
 }
 
 .navigation_item {
@@ -73,12 +77,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--font-color);
-  margin-right: 46px;
 }
 
 .contact-header {
   display: flex;
   align-content: center;
+  column-gap: 50px;
 }
 
 .contact-header_item {
@@ -87,7 +91,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-color);
-  margin-right: 50px;
 }
 
 .slogan-section {
@@ -123,13 +126,13 @@ body {
   display: flex;
 }
 .introduction {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 .container-introduction {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 30px;
 }
 
 .introduction_title {
@@ -145,7 +148,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-right: 30px;
   text-align: justify;
   width: 270px;
 }
@@ -162,10 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.activity-image {
-  margin-right: 30px;
+  column-gap: 30px;
 }
 
 .team {
@@ -176,12 +175,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 30px;
 }
 .team_card {
-  margin-right: 30px;
   text-align: center;
   width: 270px;
-  margin-bottom: 94px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -200,17 +198,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--description-color);
-}
-
-.project {
-  border-top: 1px solid #ececec;
+  margin-bottom: 30px;
 }
 
 .buttons-section {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
   padding-bottom: 50px;
+  column-gap: 8px;
 }
 
 .button {
@@ -222,7 +217,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  margin-right: 8px;
   padding: 6px 22px;
 }
 
@@ -247,6 +241,11 @@ body {
   border: #eeeeee solid 1px;
   padding-bottom: 20px;
 }
+
+.project_card img {
+  width: 100%;
+}
+
 .project_name {
   font-weight: 700;
   font-size: 18px;
@@ -281,7 +280,10 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 50px;
+}
+.contact-footer {
+  margin-top: 20px;
+  row-gap: 9px;
 }
 
 .contact-footer_address {
@@ -290,7 +292,6 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 9px;
 }
 
 .contact-footer_item {
@@ -299,7 +300,6 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-item-color);
-  margin-bottom: 9px;
 }
 
 .navigation_item:hover,
